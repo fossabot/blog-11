@@ -1,0 +1,25 @@
+---
+layout: page
+---
+<style>
+    .wrapper-masthead {
+      margin-bottom: 0;
+    }
+  </style>
+<!-- HTML elements for search -->
+<div style="text-align: center">
+    <input type="text" id="search-input" placeholder="Pesquisar no blog...">
+    <ul id="results-container" style="font-weight: bold; text-transform: uppercase;"></ul>
+</div>
+<div style="text-align: center;">
+    <img src="{{ site.baseurl }}/images/search.jpg" width="80%">
+</div>
+<!-- or without installing anything -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+<script>
+    var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: 'search.json'
+    })
+</script>

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<style>
+  .wrapper-masthead {
+    margin-bottom: 0;
+  }
+</style>
+<article class="post" style="max-width: 900px;margin: auto;text-align: justify;text-justify: inter-word;">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date">
+    Postado em {{ page.date | date: "%e de %b, %Y" }}
+  </div>
+
+  {% include disqus.html %}
+</article>

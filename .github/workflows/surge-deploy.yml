@@ -12,6 +12,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 8
-      - run: npm install -g jekyll surge
+      - run: gem install jekyll
+      - run: npm install -g surge
       - run: jekyll build
       - run: surge _site --token ${{ secrets.SURGE_TOKEN }}

@@ -12,6 +12,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 8
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
       - run: gem install jekyll
       - run: npm install -g surge
       - run: jekyll build

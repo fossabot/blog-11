@@ -8,6 +8,9 @@ jobs:
     name: Deploy no Surge
     steps:
       - uses: actions/checkout@v1
+      - name: Instalação do Jekyll e build do site
+        uses: docker://faph/action-jekyll:1.5
+        run: jekyll build
       - name: Instalação do Surge e deploy do site
         uses: actions/setup-node@v1
         with:

@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build do site
-      - run: jekyll build
-      - name: Instalação do Surge e deploy do site
+      - name: Instalação do Jekyll/Surge e deploy do site
         uses: actions/setup-node@v1
         with:
           node-version: 8
-      - run: npm install -g surge
+      - run: npm install -g jekyll surge
+      - run: jekyll build
       - run: surge _site --token ${{ secrets.SURGE_TOKEN }}

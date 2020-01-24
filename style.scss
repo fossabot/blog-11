@@ -159,6 +159,8 @@ img {
 //
 
 .wrapper-masthead {
+  position: sticky;
+  top: 0;
   margin-bottom: 50px;
 //  background-image: url('{{ site.bg_image }}');
   background-image: url('images/background.png');

@@ -18,7 +18,7 @@ São muitas possibilidades, você pode configurar como achar melhor.
 
 Eu faço uso de vários gestos no meu dia a a dia e ganho bastante tempo com isso, é realmente algo muito útil.
 
-Outro recurso que vale a pena mensionar é a _rolagem natural_ no touchpad, que não vem habilitada por padrão no _XFCE_ e precisa de alguns comandos no terminal pra funcionar corretamente.
+Outro recurso que vale a pena mencionar é a _rolagem natural_ no touchpad, que não vem habilitada por padrão no _XFCE_ e precisa de alguns comandos no terminal pra funcionar corretamente.
 
 Se você quer saber como instalar o **Gestures** e a **rolagem natural** no **Xubuntu**, não deixe de dar uma conferida no [**XFScripts**]({{ site.baseurl }}/xfscripts).
 

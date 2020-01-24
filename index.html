@@ -8,7 +8,7 @@ layout: default
 
       <div class="entry">
         <h4><a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}/{{ post.image }}" style="border-radius: 5px;">{{ post.title }}</a></h4>
-        {{ post.excerpt | strip_html | strip_newlines | truncate: 84 }}
+        {{ post.excerpt | strip_html | strip_newlines | truncate: 0 }}
       </div>
     </article>
   {% endfor %}

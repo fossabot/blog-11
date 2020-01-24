@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gestos no touchpad
-tags: [gestures]
+tags: [gestures, naturalscrolling]
 image: images/covers/gestures.png
 date: 2020-01-23 23:42:00
 ---
@@ -18,7 +18,9 @@ São muitas possibilidades, você pode configurar como achar melhor.
 
 Eu faço uso de vários gestos no meu dia a a dia e ganho bastante tempo com isso, é realmente algo muito útil.
 
-Se você quer saber como instalar o **Gestures** no **Xubuntu**, não deixe de dar uma conferida no [**XFScripts**]({{ site.baseurl }}/xfscripts).
+Ou recurso que vale a pena mensionar é a _rolagem natural_ no touchpad, que não vem habilitada por padrão no _XFCE_ e precisa de alguns comandos no terminal pra funcionar corretamente.
+
+Se você quer saber como instalar o **Gestures** e a **rolagem natural** no **Xubuntu**, não deixe de dar uma conferida no [**XFScripts**]({{ site.baseurl }}/xfscripts).
 
 Dúvidas, críticas, sugestões e reclamações podem ser feitas diretamente comigo, através do [**Gitter**](https://gitter.im/xfscripts/comunidade){:target="_blank"}.
 

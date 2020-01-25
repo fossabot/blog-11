@@ -9,7 +9,7 @@ jobs:
           name: Build do Jekyll e deploy no Surge
           command: |
             sudo apt update
-            sudo apt install -y ruby
+            sudo apt install -y ruby ruby-dev
             sudo gem install jekyll
             jekyll build
             sudo npm install -g surge

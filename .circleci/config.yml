@@ -1,32 +1,32 @@
 version: 2.1
 jobs:
-  build:
+  jekyll_install:
     docker:
       - image: circleci/ruby:latest
     steps:
       - checkout
       - run: 
-          name: Build do Jekyll
+          name: Instalação do Jekyll
           command: |
             sudo gem install jekyll
-            jekyll build
-  upload:
+  build_and_upload:
     docker:
       - image: circleci/node:latest
     steps:
       - run: 
-          name: Deploy no Surge
+          name: Build do Jekyll e Deploy no Surge
           command: |
+            jekyll build
             sudo npm install -g surge
             surge _site --token $SURGE_TOKEN
 workflows:
   version: 2.1
   build_and_upload:
     jobs:
-      - build
-      - upload:
+      - jekyll_install
+      - build_and_upload:
           requires: 
-            - build
+            - jekyll_install
 notify:
   webhooks:
     - url: https://webhooks.gitter.im/e/d554cb0ee1cbf5a23ac1

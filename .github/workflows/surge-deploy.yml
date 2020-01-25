@@ -1,17 +1,20 @@
 name: Surge
-
 on: [push]
-
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Deploy no Surge
     steps:
       - uses: actions/checkout@v1
-      - name: Instalação do Jekyll/Surge e deploy do site
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
       - uses: actions/setup-ruby@v1
-      - run: gem install jekyll
+      - name: Instalação do Jekyll
+        run: gem install jekyll
+      - name: Build do Jekyll
+        run: jekyll build
+      - name: Instalação do Surge
       - run: npm install -g surge
-      - run: jekyll build
-      - run: surge _site --token ${{ secrets.SURGE_TOKEN }}
+      - name: Deploy no Surge
+        run: surge _site --token ${{ secrets.SURGE_TOKEN }}
+      - name:
+        run: curl --data-urlencode "message=_Deploy_ do _blog_ no **Surge** concluída com sucesso através do **GitHub Actions**" ${{ secrets.GITTER_WEBHOOK }}

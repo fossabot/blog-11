@@ -24,7 +24,9 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - upload
+      - upload:
+          requires: 
+            - build
 notify:
   webhooks:
     - url: https://webhooks.gitter.im/e/d554cb0ee1cbf5a23ac1

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu Studio? Por quê?
-tags: [ubuntustudio, jack, lowlatency]
+tags: [ubuntustudio, jack, lowlatency, xfscripts]
 image: images/covers/ubuntustudio.png
 date: 2020-01-22 00:00:02
 ---

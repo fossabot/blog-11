@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gestos no touchpad
-tags: [gestures, naturalscrolling]
+tags: [gestures, naturalscrolling, xfscripts]
 image: images/covers/gestures.png
 date: 2020-01-23 23:42:00
 ---

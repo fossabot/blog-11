@@ -16,6 +16,6 @@ layout: default
   <div class="date">
     Postado em {{ page.date | date: "%e de %b, %Y" }}
   </div>
-
+  {% include related-posts.html %}
   {% include disqus.html %}
 </article>

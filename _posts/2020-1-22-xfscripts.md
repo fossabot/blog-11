@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scripts de personalização para o Xubuntu
-tags: [xubuntu, xfce]
+tags: [xubuntu, xfce, xfscripts]
 image: images/covers/xfscripts.png
 date: 2020-01-22 00:00:00
 ---

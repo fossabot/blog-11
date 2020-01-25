@@ -11,15 +11,13 @@ jobs:
       - name: Instalação do Jekyll/Surge e deploy do site
         uses: actions/setup-node@v1
         with:
-          node-version: 8
       - uses: actions/setup-ruby@v1
         with:
-          ruby-version: '2.6'
       - run: gem install jekyll
       - run: npm install -g surge
       - run: jekyll build
       - run: surge _site --token ${{ secrets.SURGE_TOKEN }}
-- name: Webhook
+- name: Gitter webhook
   uses: joelwmale/webhook-action@master
   env:
     WEBHOOK_URL: https://webhooks.gitter.im/e/d554cb0ee1cbf5a23ac1

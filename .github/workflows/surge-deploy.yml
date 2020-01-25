@@ -16,5 +16,5 @@ jobs:
         run: npm install -g surge
       - name: Deploy no Surge
         run: surge _site --token ${{ secrets.SURGE_TOKEN }}
-      - name:
+      - name: Gitter webhook
         run: curl --data-urlencode "message=_Deploy_ do _blog_ no **Surge** concluída com sucesso através do **GitHub Actions**" ${{ secrets.GITTER_WEBHOOK }}

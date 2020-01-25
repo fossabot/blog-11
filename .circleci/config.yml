@@ -21,7 +21,7 @@ jobs:
             surge _site --token $SURGE_TOKEN
 workflows:
   version: 2.1
-  build_and_test:
+  build_and_upload:
     jobs:
       - build
       - upload:

@@ -13,7 +13,7 @@ jobs:
       - name: Build do Jekyll
         run: jekyll build
       - name: Instalação do Surge
-      - run: npm install -g surge
+        run: npm install -g surge
       - name: Deploy no Surge
         run: surge _site --token ${{ secrets.SURGE_TOKEN }}
       - name:

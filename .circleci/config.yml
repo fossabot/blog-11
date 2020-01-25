@@ -8,7 +8,6 @@ jobs:
       - run: 
           name: Build do Jekyll e deploy no Surge
           command: |
-            sudo apt update
             sudo apt install npm ruby ruby-dev
             sudo gem install jekyll
             jekyll build

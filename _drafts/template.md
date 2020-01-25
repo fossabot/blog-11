@@ -2,7 +2,7 @@
 layout: post
 title: Título
 tags: [tag]
-image: images/covers/imagem.png
+image: images/covers/template.png
 date: 2020-01-01 00:00:00
 ---
 
@@ -10,7 +10,7 @@ _Texto_
 
 [_Link_](#){:target="_blank"}.
 
-![resolve](https://xfscripts.rauldipeas.tk/images/imagem.png)
+![imagem](https://xfscripts.rauldipeas.tk/images/imagem.png)
 
 _Texto_
 

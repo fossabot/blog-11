@@ -242,7 +242,7 @@ nav {
     font-size: 16px;
   }
 
-  a, a:visited, a:hover {
+  a, a:link, a:visited, a:hover, a:active {
     margin-left: 20px;
     color: $white;
     text-align: right;

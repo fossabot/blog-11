@@ -17,5 +17,12 @@ layout: default
     Postado em {{ page.date | date: "%e de %b, %Y" }}
   </div>
   {% include related-posts.html %}
-  {% include disqus.html %}
+  <!--{% include disqus.html %}-->
+  <div id="replybox" style="max-width: 750px;margin: auto;"></div>
+  <script>
+    window.replybox = {
+      site: 'yj1n1VpBO5', 
+    };
+    </script>
+    <script src="https://cdn.getreplybox.com/js/embed.js"></script>
 </article>

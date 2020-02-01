@@ -242,7 +242,7 @@ nav {
     font-size: 16px;
   }
 
-  a, a:visited {
+  a, a:visited, a:hover {
     margin-left: 20px;
     color: $white;
     text-align: right;
@@ -305,3 +305,20 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+span.toggle-dark:before {
+  font-family: FontAwesome;
+  content: "\f205";}
+
+body {
+  transition: background 0.3s ease-in, color 0.3s ease-in;
+}
+.dark {
+  * {color: $white;}
+  background:#191B1F;
+  .wrapper-masthead {background-image: url();background-color: #060606;};
+  h5 a {color: $white;};
+  span.toggle-dark:before {
+    font-family: FontAwesome;
+    content: "\f204";}
+}

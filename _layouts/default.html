@@ -2,109 +2,44 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
-
     {% include meta.html %}
-
+    {% include favicon.html %}
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    {% include bootstrap.html %}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <link rel="icon" href="https://rauldipeas.tk/assets/images/avataaars-alt.png" type="image/png">
-    <script src="https://kit.fontawesome.com/04e720fc26.js" crossorigin="anonymous"></script>
-
+    {% include fontawesome.html %}
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
-
   <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar">
-            <img class="mySlides" src="https://rauldipeas.tk/assets/images/avataaars-alt.png" style="margin: auto">
-            <img class="mySlides" src="https://rauldipeas.tk/assets/images/avataaars-alt-1.png" style="margin: auto">
-            <img class="mySlides" src="https://rauldipeas.tk/assets/images/avataaars-alt-2.png" style="margin: auto">
-            <img class="mySlides" src="https://rauldipeas.tk/assets/images/avataaars-alt-3.png" style="margin: auto">
-            <script type="text/javascript">
-              var slideIndex = 0;
-              carousel();
-
-              function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-              }
-              slideIndex++;
-                if (slideIndex > x.length) {
-                  slideIndex = 1
-              }
-              x[slideIndex - 1].style.display = "block";
-              setTimeout(carousel, 1000); // Change image every 1 seconds
-              }
-            </script>          
+            {% include animated-avatar.html %}
           </a>
-
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/" style="text-transform: uppercase;">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
-
-          <nav>
-            <!--<a href="{{ site.baseurl }}/">Blog</a>-->
-            <!--<a href="{{ site.baseurl }}/about">About</a>-->
-            <a href="https://rauldipeas.tk"><i class="fa fa-home"></i></a>
-            <a href="https://paper.dropbox.com/doc/Cursos-Raul-Dipeas-2SiXCwUNiA8BPz5OO2YdX" target="_blank"><i class="fa fa-graduation-cap"></i></a>
-            <a href="https://bandlab.com/rauldipeas" target="_blank"><i class="fa fa-music"></i></a>
-            <a href="https://trakt.tv/users/rauldipeas" target="_blank"><i class="fa fa-film"></i></a>
-            <a href="https://instagram.com/raul_dipeas" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/rauldipeas" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://gitter.im/rauldipeas" target="_blank"><i class="fab fa-gitter"></i></a>
-            <a><span class="toggle-dark" onclick="document.body.classList.toggle('dark')"></span></a>
-            <a href="{{ site.baseurl }}/search"><i class="fa fa-search"></i></a>
-          </nav>
+          {% include nav.html %}
         </header>
       </div>
     </div>
-
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-    <!-- Chatra {literal} -->
-    <script>
-      (function(d, w, c) {
-          w.ChatraID = 'JrmpvQWRyJiT2C5fL';
-          var s = d.createElement('script');
-          w[c] = w[c] || function() {
-              (w[c].q = w[c].q || []).push(arguments);
-          };
-          s.async = true;
-          s.src = 'https://call.chatra.io/chatra.js';
-          if (d.head) d.head.appendChild(s);
-      })(document, window, 'Chatra');
-    </script>
-    <!-- /Chatra {/literal} -->
-    <!-- Chatra widget code -->
-    <script>
-    window.ChatraSetup = {
-      colors: {
-          buttonText: '#0044aa', /* chat button text color */
-          buttonBg: '#fff'    /* chat button background color */
-      }
-    };
-    </script>
-    <!--<div class="wrapper-footer">
+    <div class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
+        <!--<footer class="footer">
           {% include svg-icons.html %}
         </footer>
-      </div>
-    </div>-->
-
-    {% include analytics.html %}
+      </div>-->
+    </div>
+    {% include theme.html %}
+    {% include chatra.html %}
+    <!--{% include analytics.html %}-->
   </body>
 </html>

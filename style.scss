@@ -33,12 +33,11 @@ body {
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $darkerGray;
+  color: inherit;
   font-weight: 500;
   margin: 1em 0 15px;
   padding: 0;
@@ -65,7 +64,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $darkGray;
+  color: inherit;
   a {
     color: inherit;
   }
@@ -126,7 +125,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: inherit;
 }
 
 // Specify the color of the selection
@@ -293,7 +292,7 @@ nav {
   margin-top: 50px;
 //  border-top: 1px solid #ddd;
 //  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+//  background-color: $lightGray;
 }
 
 footer {
@@ -308,7 +307,9 @@ footer {
 
 span.toggle-dark:before {
   font-family: FontAwesome;
-  content: "\f205";}
+  content: "\f042";
+//  content: "\f205";
+}
 
 body {
   transition: background 0.3s ease-in, color 0.3s ease-in;

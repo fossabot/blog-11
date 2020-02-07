@@ -175,7 +175,7 @@ img {
 }
 
 .masthead {
-  padding: 5px 0;
+  padding: 4px 0;
 //  border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -197,6 +197,7 @@ img {
 
   img {
     border-radius: 5px;
+    margin: 0 auto;
   }
 }
 
@@ -305,21 +306,69 @@ footer {
 @import "highlights";
 @import "svg-icons";
 
+// Tema escuro CSS
+//span.toggle-dark:before {
+//  font-family: FontAwesome;
+//  content: "\f205";
+//}
+
+//body {
+//  transition: background 0.3s ease-in, color 0.3s ease-in;
+//}
+//.dark {
+//  * {color: $white;}
+//  background:#191B1F;
+//  .wrapper-masthead {background-image: url();background-color: #060606;};
+//  h5 a {color: $white;};
+//  span.toggle-dark:before {
+//    font-family: FontAwesome;
+//    content: "\f204";}
+//}
+
+// Minhas modificações
+.site-name {text-transform: uppercase;}
+
 span.toggle-dark:before {
   font-family: FontAwesome;
   content: "\f042";
-//  content: "\f205";
 }
 
-body {
-  transition: background 0.3s ease-in, color 0.3s ease-in;
+.entry img {border-radius: 5px;}
+
+.post {
+  max-width: 900px;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
-.dark {
-  * {color: $white;}
-  background:#191B1F;
-  .wrapper-masthead {background-image: url();background-color: #060606;};
-  h5 a {color: $white;};
-  span.toggle-dark:before {
-    font-family: FontAwesome;
-    content: "\f204";}
+
+.comments {
+  max-width: 750px;
+  margin: 50px auto;
 }
+
+#replybox {
+  max-width: 750px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.relatedPost img {border-radius: 5px;}
+
+#search-input {color: #000;}
+
+#results-container {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: left;
+}
+
+.search-image {
+  width: 80%;
+  margin-left: 400px;
+  text-align: center;
+}
+
+.page {text-align: center;}

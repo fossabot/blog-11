@@ -165,13 +165,14 @@ img {
   margin-bottom: 50px;
 //  background-image: url('{{ site.bg_image }}');
   background-image: url('images/background.png');
+  background-color: #060606;
   background-position: 0 0px; 
   background-size: cover;
   @include mobile {
     float: none;
     display: block;
     margin: 1 auto;
-    background-size : auto auto;}
+    background-size : auto auto}
 }
 
 .masthead {
@@ -316,24 +317,24 @@ footer {
 //  transition: background 0.3s ease-in, color 0.3s ease-in;
 //}
 //.dark {
-//  * {color: $white;}
+//  * {color: $white}
 //  background:#191B1F;
-//  .wrapper-masthead {background-image: url();background-color: #060606;};
-//  h5 a {color: $white;};
+//  .wrapper-masthead {background-image: url();background-color: #060606};
+//  h5 a {color: $white};
 //  span.toggle-dark:before {
 //    font-family: FontAwesome;
-//    content: "\f204";}
+//    content: "\f204"}
 //}
 
 // Minhas modificações
-.site-name {text-transform: uppercase;}
+.site-name {text-transform: uppercase}
 
 span.toggle-dark:before {
   font-family: FontAwesome;
   content: "\f042";
 }
 
-.entry img {border-radius: 5px;}
+.entry img {border-radius: 5px}
 
 .post {
   max-width: 900px;
@@ -354,9 +355,9 @@ span.toggle-dark:before {
   border-radius: 5px;
 }
 
-.relatedPost img {border-radius: 5px;}
+.relatedPost img {border-radius: 5px}
 
-#search-input {color: #000;}
+#search-input {color: #000}
 
 #results-container {
   font-weight: bold;
@@ -371,4 +372,4 @@ span.toggle-dark:before {
   text-align: center;
 }
 
-.page {text-align: center;}
+.page {text-align: center}

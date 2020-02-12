@@ -15,7 +15,3 @@ Todos os scripts foram criados de forma à funcionar numa instalação limpa do 
 Outra observação relevante, é que no script do _Compton_ e dos _Gestures_ há um passo a passo para a compilação de ambos, mas eu também disponibilizei links para pacotes _deb_ que podem ser instalados diretamente, facilitando o processo.
 
 ![desktop](https://xfscripts.rauldipeas.tk/images/desktop.png)
-
-Dúvidas, críticas, sugestões e reclamações podem ser feitas diretamente comigo, através do [**Gitter**](https://gitter.im/xfscripts/comunidade){:target="_blank"}.
-
-[![gitter-banner](https://xfscripts.rauldipeas.tk/images/gitter-banner.png)](https://gitter.im/xfscripts/comunidade){:target="_blank"}

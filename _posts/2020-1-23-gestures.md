@@ -21,7 +21,3 @@ Eu faço uso de vários gestos no meu dia a a dia e ganho bastante tempo com iss
 Outro recurso que vale a pena mencionar é a _rolagem natural_ no touchpad, que não vem habilitada por padrão no _XFCE_ e precisa de alguns comandos no terminal pra funcionar corretamente.
 
 Se você quer saber como instalar o **Gestures** e a **rolagem natural** no **Xubuntu**, não deixe de dar uma conferida no [**XFScripts**]({{ site.baseurl }}/xfscripts).
-
-Dúvidas, críticas, sugestões e reclamações podem ser feitas diretamente comigo, através do [**Gitter**](https://gitter.im/xfscripts/comunidade){:target="_blank"}.
-
-[![gitter-banner](https://xfscripts.rauldipeas.tk/images/gitter-banner.png)](https://gitter.im/xfscripts/comunidade){:target="_blank"}

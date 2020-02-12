@@ -21,7 +21,3 @@ Esse é o maior diferencial do **Ubuntu Studio** em relação as outras _flavour
 Porém, entretanto e não obstante(_filosofei...rs_), tanto o kernel _lowlatency_ quanto o _JACK_ podem ser instalados em qualquer _flavour_ do **Ubuntu**, sem maiores dificuldades, desde que o _JACK_ seja configurado corretamente, tudo vai funcionar perfeitamente.  
 
 Se você quer saber como instalar o kernel _lowlatency_ e o _JACK_ no **Xubuntu**, não deixe de dar uma conferida no [**XFScripts**]({{ site.baseurl }}/xfscripts).
-
-Dúvidas, críticas, sugestões e reclamações podem ser feitas diretamente comigo, através do [**Gitter**](https://gitter.im/xfscripts/comunidade){:target="_blank"}.
-
-[![gitter-banner](https://xfscripts.rauldipeas.tk/images/gitter-banner.png)](https://gitter.im/xfscripts/comunidade){:target="_blank"}

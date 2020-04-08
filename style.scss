@@ -378,3 +378,8 @@ span.toggle-dark:before {
   right: 20px !important;
   bottom: 10px !important;
 }
+
+.mySlides:hover {
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  transform: rotate(-5deg); /* Standard syntax */
+}

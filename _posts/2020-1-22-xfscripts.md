@@ -6,7 +6,7 @@ image: images/covers/xfscripts.png
 date: 2020-01-22 00:00:00
 ---
 
-Eu criei um repositório no [**GitHub**](https://github.com/rauldipeas/xfscripts){:target="_blank"}, com scripts de personalização para o [**Xubuntu**](https://xubuntu.org){:target="_blank"} [**19.10**](https://xubuntu.org/release/19-10/){:target="_blank"}.
+Eu criei um repositório no [**GitHub**](https://github.com/rauldipeas/xfscripts){:target="_blank"}, com scripts de personalização para o [**Xubuntu**](https://xubuntu.org){:target="_blank"} [**20.04**](https://xubuntu.org/release/20-04/){:target="_blank"}.
 
 O nome do projeto é [**XFScripts**](https://xfscripts.rauldipeas.tk){:target="_blank"}, nesse repositório eu incluí tudo que eu uso atualmente no Xubuntu, como o [**Compton**](https://github.com/tryone144/compton){:target="_blank"}, [**DockbarX**](https://launchpad.net/~xuzhen666/+archive/ubuntu/dockbarx){:target="_blank"}, temas, programas, etc... 
 

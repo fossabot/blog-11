@@ -19,7 +19,7 @@ avatar: https://rauldipeas.tk/assets/images/avataaars-alt.png
 footer-links:
   dribbble:
   email: rauldipeas@mail.com
-  facebook:
+  facebook: rauldipeas
   flickr:
   github: rauldipeas
   instagram: raul_dipeas
@@ -30,6 +30,9 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
+  mastodon:
+    - username: raul_dipeas
+    - instance: mastodon.social
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts

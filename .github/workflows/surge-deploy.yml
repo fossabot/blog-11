@@ -3,18 +3,12 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Deploy no Surge
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-      - uses: actions/setup-ruby@v1
-      - name: Instalação do Jekyll
-        run: gem install jekyll
-      - name: Build do Jekyll
-        run: jekyll build
-      - name: Instalação do Surge
-        run: npm install -g surge
-      - name: Deploy no Surge
-        run: surge _site --token ${{ secrets.SURGE_TOKEN }}
-      - name: Gitter webhook
-        run: curl --data-urlencode "message=_Deploy_ do _blog_ no **Surge** concluída com sucesso através do **GitHub Actions** | https://blog.rauldipeas.tk" ${{ secrets.GITTER_WEBHOOK }}
+      - uses: jerryjvl/jekyll-build-action@v1
+      - uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: 'blog.rauldipeas.tk'
+          project: '_site'
+          login: ${{ secrets.SURGE_LOGIN }}
+          token: ${{ secrets.SURGE_TOKEN }}

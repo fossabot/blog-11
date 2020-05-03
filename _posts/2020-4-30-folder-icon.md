@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pastas coloridas no XFCE
-tags: [tag]
+tags: [folder-icon, folder-color, tumbler, emblems, xfce, xubuntu, xfscripts]
 image: images/covers/folder-icon.png
 date: 2020-04-30 22:09:00
 ---

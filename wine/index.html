@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>M$ Linux?(WINE) – Raul Dipeas</title>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Para executar aplicativos do Windows nas distribuições Linux, é necessária a instalação do WINE e nem sempre você encontra informações concretas sobre a compatibilidade dos programas que precisa rodar, mas existem algumas formas de ampliar ao máximo essa compatibilidade, principalmente com jogos e plugins de áudio no formato VST, que é justamente o uso que eu faço do WINE, já que trabalho com produção musical no Linux há mais de uma década.
+" />
+    <meta property="og:description" content="Para executar aplicativos do Windows nas distribuições Linux, é necessária a instalação do WINE e nem sempre você encontra informações concretas sobre a compatibilidade dos programas que precisa rodar, mas existem algumas formas de ampliar ao máximo essa compatibilidade, principalmente com jogos e plugins de áudio no formato VST, que é justamente o uso que eu faço do WINE, já que trabalho com produção musical no Linux há mais de uma década.
+" />
+    
+    <meta name="author" content="Raul Dipeas" />
+
+    
+    <meta property="og:title" content="M$ Linux?(WINE)" />
+    <meta property="twitter:title" content="M$ Linux?(WINE)" />
+    
+    <link rel="icon" href="https://rauldipeas.tk/assets/images/avataaars-alt.png" type="image/png">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Raul Dipeas - Meu blog pessoal" href="/feed.xml" />
+    <script src="https://kit.fontawesome.com/04e720fc26.js" crossorigin="anonymous"></script>
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+  <body>
+    <div class="wrapper-masthead" id="masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar">
+            <img class="mySlides" src="https://rauldipeas.tk/assets/images/avataaars-alt.png">
+<img class="mySlides" src="https://rauldipeas.tk/assets/images/avataaars-alt-1.png">
+<img class="mySlides" src="https://rauldipeas.tk/assets/images/avataaars-alt-2.png">
+<img class="mySlides" src="https://rauldipeas.tk/assets/images/avataaars-alt-3.png">
+<script src="/js/animated-avatar.js"></script>
+          </a>
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Raul Dipeas</a></h1>
+            <p class="site-description">Meu blog pessoal</p>
+          </div>
+          <nav>
+    <a href="https://rauldipeas.tk"><i class="fa fa-home"></i></a>
+    <a href="https://paper.dropbox.com/doc/Cursos-Raul-Dipeas-2SiXCwUNiA8BPz5OO2YdX" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+    <a href="https://bandlab.com/rauldipeas" target="_blank"><i class="fa fa-music"></i></a>
+    <a href="https://trakt.tv/users/rauldipeas" target="_blank"><i class="fa fa-film"></i></a>
+    <a href="https://instagram.com/raul_dipeas" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/rauldipeas" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://discord.gg/bEVNHfg" target="_blank"><i class="fab fa-discord"></i></a>
+    <a><span class="toggle-dark" onclick="theme()"></span></a>
+    <a href="/search"><i class="fa fa-search"></i></a>
+</nav>
+        </header>
+      </div>
+    </div>
+    <div id="main" role="main" class="container">
+      <style>
+  .wrapper-masthead {
+    margin-bottom: 0;
+  }
+  .entry img {
+    border-radius: 0px;
+  }
+</style>
+<article class="post">
+  <h1>M$ Linux?(WINE)</h1>
+
+  <div class="entry">
+    <p>Para executar aplicativos do <em>Windows</em> nas distribuições <em>Linux</em>, é necessária a instalação do <a href="https://winehq.org/" target="_blank"><strong>WINE</strong></a> e nem sempre você encontra informações concretas sobre a compatibilidade dos programas que precisa rodar, mas existem algumas formas de ampliar ao máximo essa compatibilidade, principalmente com <em>jogos</em> e <em>plugins de áudio no formato VST</em>, que é justamente o uso que eu faço do <strong>WINE</strong>, já que trabalho com produção musical no <em>Linux</em> há mais de uma década.</p>
+
+<p>Na parte dos <em>jogos</em>, a solução é extremamente simples, você pode usar o <a href="https://lutris.net/" target="_blank"><strong>Lutris</strong></a>, ele tem uma base de dados bem organizada, onde você encontra vários scripts prontos para a grande maioria dos jogos que ainda não foi portado nativamente para o <em>Linux</em>, é só instalar e se divertir.</p>
+
+<p><img src="https://xfscripts.rauldipeas.tk/images/lutris.png" alt="lutris" /></p>
+
+<p>Com relação aos <em>plugins de áudio no formato VST</em>, a solução também é simples, porém, são necessários alguns comandos no terminal pra instalar o <a href="https://wiki.winehq.org/Wine-Staging" target="_blank"><strong>WINE Staging</strong></a>, o <a href="https://github.com/osxmidi/LinVst" target="_blank"><strong>LinVST</strong></a> e alguns complementos.</p>
+
+<p><img src="https://xfscripts.rauldipeas.tk/images/wine.png" alt="wine" /></p>
+
+<p>A lista de plugins compatíveis é bem grande, pouquíssimos plugins não funcionam <em>ainda</em>.</p>
+
+<p>Se você quer saber como instalar o <strong>WINE</strong> e o <strong>LinVST</strong> no <strong>Xubuntu</strong>, não deixe de dar uma conferida no <a href="/xfscripts"><strong>XFScripts</strong></a>.</p>
+
+    <!--Dúvidas, críticas, sugestões e reclamações podem ser feitas diretamente comigo, através do <a href="https://join.skype.com/invite/ul0ArXNBCjGW" target="_blank"><img src="/images/skype.png" width="90px" style="margin: 0px 0px -15px 0px;"/></a>-->
+  </div>
+
+  <div class="date">
+    </br>
+    Postado em 21 de Jan, 2020
+  </div>
+  <!--<p style="text-align: center;margin-top: 30px;">Compartilhe essa postagem com seus amigos!</p>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-5e17f299-81fd-4381-ab63-ec32774ac7e5"></div>
+<p style="text-align: center;margin-top: 30px;margin-bottom: 30px;">Deixe sua opinião ou dúvida nos comentários!</p>-->
+  
+<div class="comments" style="margin-top: 35px;">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'rauldipeas';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+  <div style="text-align: center;">
+<iframe src="https://discord.com/widget?id=709523237322620928&theme=dark" width="80%" height="220" allowtransparency="true" frameborder="0"></iframe>
+</div>
+  <!--<script async src="https://comments.app/js/widget.js?2" data-comments-app-website="gExAcg-9" data-limit="5" data-dislikes="1"></script>-->
+  <!--<script src="https://utteranc.es/client.js"
+        repo="rauldipeas/utterances"
+        issue-term="pathname"
+        label="Comentários"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+  </script>-->
+  <!--<div id="replybox"></div>
+<script>
+    window.replybox = {
+      site: 'yj1n1VpBO5', 
+    };
+</script>
+<script src="https://cdn.getreplybox.com/js/embed.js"></script>-->
+  
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <h4>Leia mais postagens...</h4>
+                <div style="margin-top: -20px;">
+                
+                <div class="relatedPost col-lg-3" style="text-align: left;">
+                    <h5><a href="/folder-icon/" style="color: inherit;">Pastas coloridas ...<img src="../images/covers/folder-icon.png"/>
+                    
+                    </a></h5>
+                </div>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <div class="relatedPost col-lg-3" style="text-align: left;">
+                    <h5><a href="/panel/" style="color: inherit;">Painel, o cockpit...<img src="../images/covers/panel.png"/>
+                    
+                    </a></h5>
+                </div>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <div class="relatedPost col-lg-3" style="text-align: left;">
+                    <h5><a href="/gestures/" style="color: inherit;">Gestos no touchpad<img src="../images/covers/gestures.png"/>
+                    
+                    </a></h5>
+                </div>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                <div class="relatedPost col-lg-3" style="text-align: left;">
+                    <h5><a href="/resolve/" style="color: inherit;">Tá difícil editar...<img src="../images/covers/resolve.png"/>
+                    
+                    </a></h5>
+                </div>
+                
+                
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </div>
+
+</article>
+
+    </div>
+    <div class="wrapper-footer">
+      <div class="container">
+        <!--<footer class="footer">
+          
+<a href="mailto:rauldipeas@mail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/rauldipeas"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/rauldipeas"><i class="svg-icon github"></i></a>
+<a href="https://instagram.com/raul_dipeas"><i class="svg-icon instagram"></i></a>
+
+
+
+<a href="https://www.twitter.com/rauldipeas"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>-->
+    </div>
+    <script src="/js/theme.js"></script>
+    <!--<script src="/js/chatra.js"></script>-->
+    <!--<script src="/js/integram.js"></script>
+<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>-->
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v6.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="100113718305981"
+  greeting_dialog_display="hide"
+  logged_in_greeting="Em que posso te ajudar?"
+  logged_out_greeting="Em que posso te ajudar?">
+</div>
+    <!--<span class="skype-button bubble" data-color="#01AFF0" data-contact-id="rauldipeas"></span>
+<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>-->
+    <!--
+-->
+  </body>
+</html>

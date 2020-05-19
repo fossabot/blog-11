@@ -383,3 +383,16 @@ span.toggle-dark:before {
   -ms-transform: rotate(-5deg); /* IE 9 */
   transform: rotate(-5deg); /* Standard syntax */
 }
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  text-align:center;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}

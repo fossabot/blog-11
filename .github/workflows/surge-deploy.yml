@@ -5,14 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GH_PAGES_TOKEN }}
-          publish_dir: _site
-          publish_branch: gh-pages
-          user_name: 'Raul Dipeas'
-          user_email: 'rauldipeas@mail.com'
-          enable_jekyll: true
       - uses: jerryjvl/jekyll-build-action@v1
       - uses: dswistowski/surge-sh-action@v1
         with:
@@ -20,3 +12,10 @@ jobs:
           project: '_site'
           login: ${{ secrets.SURGE_LOGIN }}
           token: ${{ secrets.SURGE_TOKEN }}
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_PAGES_TOKEN }}
+          publish_dir: _site
+          publish_branch: gh-pages
+          user_name: 'Raul Dipeas'
+          user_email: 'rauldipeas@mail.com'

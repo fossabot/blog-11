@@ -831,4 +831,18 @@ span.toggle-dark:before {
   /* Standard syntax */
 }
 
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */

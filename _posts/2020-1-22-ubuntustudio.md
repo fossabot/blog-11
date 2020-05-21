@@ -14,7 +14,7 @@ Mas enfim, qual é a real vantagem em usar o **Ubuntu Studio**? A resposta pra e
 
 O **Ubuntu Studio** traz por padrão o kernel _lowlatency_, que entre outras vantagens, te permite executar o servidor de áudio [**JACK**](https://jackaudio.org/){:target="_blank"} com áudio em baixa latência, isso é fundamental para trabalhar com programas de edição de áudio e de produção musical, como o [**REAPER**](https://reaper.fm/){:target="_blank"}, por exemplo.  
 
-![jack](https://xfscripts.rauldipeas.tk/images/jack.png)  
+![jack](https://rauldipeas.github.io/xfscripts/images/jack.png)  
 
 Esse é o maior diferencial do **Ubuntu Studio** em relação as outras _flavours_ do **Ubuntu**, o restante das diferenças é bem superficial, em comparação ao **Xubuntu**, que usa o mesmo ambiente gráfico, o **XFCE**.  
 

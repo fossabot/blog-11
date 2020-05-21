@@ -1,4 +1,4 @@
-name: Surge
+name: GitHub Pages
 on: [push]
 jobs:
   build:
@@ -6,12 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: jerryjvl/jekyll-build-action@v1
-      - uses: dswistowski/surge-sh-action@v1
-        with:
-          domain: 'blog.rauldipeas.tk'
-          project: '_site'
-          login: ${{ secrets.SURGE_LOGIN }}
-          token: ${{ secrets.SURGE_TOKEN }}
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_PAGES_TOKEN }}

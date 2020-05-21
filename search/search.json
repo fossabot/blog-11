@@ -4,7 +4,7 @@
       "title"    : "Pastas coloridas no XFCE",
       "category" : "",
       "tags"     : "folder-icon, folder-color, tumbler, emblems, xfce, xubuntu, xfscripts",
-      "url"      : "/folder-icon/",
+      "url"      : "/blog/folder-icon/",
       "date"     : "2020-04-30 17:09:00 -0500"
     } ,
   
@@ -12,7 +12,7 @@
       "title"    : "Painel, o cockpit do sistema",
       "category" : "",
       "tags"     : "panel, xfce, xubuntu, xfscripts",
-      "url"      : "/panel/",
+      "url"      : "/blog/panel/",
       "date"     : "2020-01-25 13:08:00 -0600"
     } ,
   
@@ -20,7 +20,7 @@
       "title"    : "Gestos no touchpad",
       "category" : "",
       "tags"     : "gestures, naturalscrolling, xfscripts",
-      "url"      : "/gestures/",
+      "url"      : "/blog/gestures/",
       "date"     : "2020-01-23 17:42:00 -0600"
     } ,
   
@@ -28,7 +28,7 @@
       "title"    : "Tá difícil editar? O DaVinci Resolve!",
       "category" : "",
       "tags"     : "resolve, xfscripts",
-      "url"      : "/resolve/",
+      "url"      : "/blog/resolve/",
       "date"     : "2020-01-22 22:32:00 -0600"
     } ,
   
@@ -36,7 +36,7 @@
       "title"    : "REAPER, o ceifeiro musical",
       "category" : "",
       "tags"     : "reaper, linvst, xfscripts",
-      "url"      : "/reaper/",
+      "url"      : "/blog/reaper/",
       "date"     : "2020-01-21 18:00:05 -0600"
     } ,
   
@@ -44,7 +44,7 @@
       "title"    : "M$ Linux?(WINE)",
       "category" : "",
       "tags"     : "wine, linvst, lutris, xfscripts",
-      "url"      : "/wine/",
+      "url"      : "/blog/wine/",
       "date"     : "2020-01-21 18:00:04 -0600"
     } ,
   
@@ -52,7 +52,7 @@
       "title"    : "Ubuntu Studio? Por quê?",
       "category" : "",
       "tags"     : "ubuntustudio, jack, lowlatency, xfscripts",
-      "url"      : "/ubuntustudio/",
+      "url"      : "/blog/ubuntustudio/",
       "date"     : "2020-01-21 18:00:02 -0600"
     } ,
   
@@ -60,7 +60,7 @@
       "title"    : "Terminal turbinado com o Bash-it",
       "category" : "",
       "tags"     : "bash, terminal, xfscripts",
-      "url"      : "/bash-it/",
+      "url"      : "/blog/bash-it/",
       "date"     : "2020-01-21 18:00:01 -0600"
     } ,
   
@@ -68,7 +68,7 @@
       "title"    : "Scripts de personalização para o Xubuntu",
       "category" : "",
       "tags"     : "xubuntu, xfce, xfscripts",
-      "url"      : "/xfscripts/",
+      "url"      : "/blog/xfscripts/",
       "date"     : "2020-01-21 18:00:00 -0600"
     } 
   
